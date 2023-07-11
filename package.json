@@ -1,0 +1,27 @@
+{
+  "name": "pnpm-monorepo-demo",
+  "version": "1.0.0",
+  "description": "pnpm + workspace + changesets demo",
+  "main": "index.js",
+  "scripts": {
+    "watch": "pnpm --parallel -r run watch",
+    "build": "pnpm -r run build",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "changeset publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mocha-opts/pnpm-monorepo-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mocha-opts/pnpm-monorepo-demo/issues"
+  },
+  "homepage": "https://github.com/mocha-opts/pnpm-monorepo-demo#readme",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "rimraf": "^5.0.1"
+  }
+}

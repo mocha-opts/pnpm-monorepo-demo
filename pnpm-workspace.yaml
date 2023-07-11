@@ -1,0 +1,2 @@
+packages:  ##packages 目录下的子目录都会被加入到 workspace
+  - 'packages/*'
