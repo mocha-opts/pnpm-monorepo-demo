@@ -1,6 +1,6 @@
 {
   "name": "@coconut-killer/monorepo-pkg-b",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
   "files": [
@@ -17,6 +17,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@coconut-killer/monorepo-pkg-a": "workspace:^0.0.0"
+    "@coconut-killer/monorepo-pkg-a": "workspace:^0.1.0"
   }
 }
