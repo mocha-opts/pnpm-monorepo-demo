@@ -32,6 +32,7 @@ jobs:
       - name: create and publish versions
         uses: changesets/action@v1
         with:
+          token: ${{ secrets.ACCESS_TOKEN }}
           version: pnpm version
           commit: "chore: update versions"
           title: "chore: update versions"
