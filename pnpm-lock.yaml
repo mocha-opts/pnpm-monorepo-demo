@@ -23,7 +23,10 @@ importers:
       '@coconut-killer/monorepo-pkg-a': link:../a
 
   packages/c:
-    specifiers: {}
+    specifiers:
+      '@coconut-killer/monorepo-pkg-a': workspace:^0.1.2
+    dependencies:
+      '@coconut-killer/monorepo-pkg-a': link:../a
 
 packages:
 
