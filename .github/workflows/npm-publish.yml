@@ -19,8 +19,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: install pnpm
-        run: npm i pnpm@6.35.1 -g
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 6
       - name: Setup npmrc
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
       - name: setup pnpm config
