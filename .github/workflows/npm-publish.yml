@@ -32,11 +32,10 @@ jobs:
       - name: create and publish versions
         uses: changesets/action@v1
         with:
-          token: ${{ secrets.ACCESS_TOKEN }}
           version: pnpm version
           commit: "chore: update versions"
           title: "chore: update versions"
-          publish: pnpm publish
+          publish: pnpm publish --token=${{ secrets.ACCESS_TOKEN }}
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
