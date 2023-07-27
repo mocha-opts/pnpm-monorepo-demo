@@ -6,8 +6,8 @@
   "scripts": {
     "watch": "pnpm --parallel -r run watch",
     "build": "pnpm -r run build",
-    "changeset": "changeset",
-    "version": "changeset version",
+    "changeset": "pnpm changeset",
+    "version": "pnpm changeset version",
     "release": "changeset publish",
     "publish":"pnpm publish -r"
   },
